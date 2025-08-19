@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
 </head>
 <body>
-    <!-- Navbar -->
+      <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-success mb-4">
   <div class="container-fluid">
@@ -55,100 +55,109 @@
 
 <!-- Navbar -->
 
- 
 
- <!-- -----------------------------------------------Fil d'ariane------------------------------------------------------------ -->
-
-<div aria-label="breadcrumb " data-animation="">
-  <ol class="breadcrumb py-2  w-70 rounded-end bg-success-subtle">
-    
-    <li class="breadcrumb-item active offset-md-1" aria-current="page">Accueil</li>
-  </ol>
-</div>
-
-<!-- -----------------------------------------------Fil d'ariane------------------------------------------------------------ -->
- <div class="text-center">
- <h1>Travel to Rio, votre agence de voyage pour le Brésil</h1>
- </div>
-
-<!-- Carrousel -->
- <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<main>
+    <!-- carousel -->
+    <div class="container py-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://s2-casavogue.glbimg.com/i8FNc4vZMkgzUnakHdfEfVOzZIM=/0x0:1732x1732/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2023/E/T/T6ad3rT12YNQmPZQMgNw/02-as-paisagens-naturais-mais-lindas-do-brasil-lencois-maranhenses2-min.jpg" alt="First slide" width="1300" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/17/76/26/parque-nacional-dos-lencois.jpg?w=1200&h=1200&s=1" alt="Second slide" width="1300" height="600">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.carpemundi.com.br/wp-content/uploads/2019/10/lencoismaranhensesdicas-scaled.jpg" alt="Third slide" width="1300" height="600">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only bg-danger">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only bg-danger">Next</span>
+            </a>
+        </div>
+        
+        <!-- list -->
+         <div class="container py-4">
+            <ul class="list-group">
+                <li class="list-group-item fs-4"><b>Durée :</b> 2 à 4 nuits</li>
+                <li class="list-group-item fs-4"><b>Prix :</b> 194€</li>
+                <li class="list-group-item fs-4"><b>Date :</b> 27 sept. 2025</li>
+            </ul>
+        </div>
+        
+        <button class="kv-PlusDetails-cta m-3 kv-js-PlusDetails-cta" data-anchor="#presentation">+ Voir le descriptif</button>
+        
+        <!-- formulaire -->
+         <form>
+            <div class="container py-5">
+                <h2>Personnalisez votre séjour</h2>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer01">Prenom</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationServer02">Nom</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationServer03">Ville de départ</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                        </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img src="/images/rio-rio-de-janeiro-port-1.webp" class="d-block w-100" alt="rio de janeiro" height="800" object-fit="cover">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Rio de Janeiro</h5>
-        <p>Envolez-vous pour Rio</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/images/saoPaulo1.webp" class="d-block w-100" alt="Sao Paulo" width="800" height="900">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Sao paulo</h5>
-        <p>Visitez Sao Paulo</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/images/salvador.jpg" class="d-block w-100" alt="Salvador" width="800" height="900">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Salvador</h5>
-        <p>La belle ville de Salvador</p>
-      </div>
-    </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- Carrousel -->
+</form>
+   
+    <!-- details -->
+   <div class="col text-left fs-6"> 
+      <h2>Situation</h2>
+      <p>Située au large des côtes valenciennes, au cœur de la méditerranée, Majorque est la plus grande île des Baléares, mesurant près de 80 km de long et 550 km de côte. Destination pleine de charme, elle profite d'un climat agréable, en moyenne 25° en saison estivale.
+Connue pour ses belles plages et criques aux eaux cristallines (Calas de Mallorca, Porto Cristo, Playa de Muro, Cala Millor), l'île se distingue également par ses paysages préservés (parcs naturels : S'Albufera, Sa Dragonera, Cabrera) et son authenticité…
+Visitez l'arrière-pays et découvrez les villages typiques majorquins, dont les plus fameux sont Deia, Pollenca ou Valldemosa !
+Autre visite incontournable, Palma, la capitale ! Prenez le temps de vous y balader et voir sa cathédrale « Sa Seu » ou encore le palais Royal d'Almudaina (un ancien alcazar maure).</p>
+      <hr>
+      <h2>Les plus</h2>
+      <p>Activités familiales</p>
+      <p>Dans le quartier calme de Can Picafort</p>
+      <p>Cadre verdoyant</p>
+    </div>
 
-<!-- Table -->
-
-<h3 class="my-3">Départs de dernière minute</h3>
-<div class="container-fit border-top-dark">
-<table class="table table-striped table-success border-dark">
-  <thead class="border-t-dark">
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Destination</th>
-      <th scope="col">Date</th>
-      <th scope="col">Prix</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Rio de Janeiro</td>
-      <td>24/08/2025</td>
-      <td>815,00€</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Sao Paulo</td>
-      <td>26/08/2028</td>
-      <td>714,50€</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Salvador</td>
-      <td>28/08/2025</td>
-      <td>912,20€</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<!-- Table -->
+    <!-- button reservation-->
+    <button type="button" class="btn m-3 fixed-bottom align-items-center w-50 btn-primary btn-lg btn-block"><b>Réservez maintenant</b></button>
+</main>
 
 <!-- Footer -->
 
